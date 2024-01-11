@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#waraper{
+height: 100vh;
+overflow-x: hidden;
+overflow-y: auto;
+perspective: 10px;
+
+}
+#container{
+    position: relative;
+   
+   height: 100%;  
+   display: flex;
+   justify-content: center;
+   transform-style: preserve-3d;
+   
+   z-index: -1;
+}
+#container h2{
+    position: absolute;
+    margin-top: 200px;
+    font-weight: 800;
+    font-size: 10rem;
+    font-style: oblique;
+    color: white;
+    text-shadow: 0 10px 10px  rgba(0,0,0,0.8);
+    
+}
+.mountain {
+    transform: translateZ(-60px) scale(7);
+   
+
+}
+.man{
+    transform: translateZ(-10px) scale(2);
+
+
+}
+.mountain,.man{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+
+}
+section{
+    background-color: rgb(45, 45, 45);
+}
+.section-heading{
+    font-size: 5rem;
+    color: white;
+    padding: 5rem 10rem;
+}
+section p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 2rem 1rem;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.bg h2{
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform:  translateX(-50%) ;
+    font-size: 3.5rem;
+    font-weight: 600;
+
+} 
+.bg1{
+    background-image: url(img1.jpg);
+}
+.bg2{
+    background-image: url(img2.jpg);
+}
+.bg3{
+    background-image: url(img3.jpg);
+}
